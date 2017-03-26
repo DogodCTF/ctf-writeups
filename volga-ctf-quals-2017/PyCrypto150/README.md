@@ -1,4 +1,9 @@
+# Volga CTF Quals 2017 PyCrypto
+###Category: Crypto, 150 points
+
 >This crypto algorithm uses a huge key and it's implementation is not so trivial to reverse engineer. Isn't it wonderful?
+
+###Write-up
 
 We take a peek in encrypt.py -> 160 bit key, 20 bytes.
 
