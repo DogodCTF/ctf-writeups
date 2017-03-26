@@ -60,6 +60,6 @@ We now get this plaintext.
 
 
 > VolgaCTF{N@me_is_Pad_Many_Times_P@d_Mi$$_me?}
-> Gilbert Vernam was an AT&T Bell Labs engineer who, in 1917, invented an additive polyalphabetic
+> Gilbert Vernam was an AT&T Bell Labs engineer who, in 1917, invented an additive polyalphabetic ...
 
 Bingo.
