@@ -11,7 +11,7 @@
 
 After messing about with the keypass program it was obvious that the passphrase generation was weak
 
-´´´
+```
 $ ./keypass A
 Ah=j&FQpX).Y!x2?H
 $ ./keypass AA
@@ -20,21 +20,21 @@ $ ./keypass AAA
 Ah=j&FQpX).Y!x2?H
 $ ./keypass AAAA
 BWf81zF%SdkxL*jL.
-´´´
+```
 Oops.
 Lets generate some keys
-´´´
+```
 for x in {0..255}
 do
 	export x
 	./keypass $(perl -le 'print chr $ENV{x}')
 done
-´´´
+```
 >$sh generatekeys.sh > keys
 
 Some of these inputs are invalid, the keyfile can be cleaned up or not, doesn't matter.
 Now let's check how many unique keys there are.
-´´´
+```
 with open("keys", "r") as ins:
     array = []
     a = 0;
@@ -44,7 +44,7 @@ with open("keys", "r") as ins:
             a = a + 1
 
 print(a)
-´´´
+```
 >$python uniquekeys.py
 >251
 >$ wc keys
@@ -52,7 +52,7 @@ print(a)
 Cool, seems like all these keys are unique atleast.
 Now let's try to crack that zip-file using the following script.
 
-´´´
+```
 KEYS=`cat keys`
 
 for k in $KEYS; do
@@ -62,7 +62,7 @@ for k in $KEYS; do
                 exit
         fi
 done
-´´´
+```
 However, no luck. After this, generation of keys of all possible inputs with 2 bytes was tested but this didn't
 generate any more unique keys and took a long time.
 
@@ -80,7 +80,7 @@ However, when we check this on the running machine
 Oops. Lets try this operation on a kali machine instead.
 
 
-´´´
+```
 root@kali:~# apt-get update
 root@kali:~# apt-get install openssl
 root@kali:~# sh decrypt.sh
@@ -89,6 +89,6 @@ Archive:  a
  extracting: flag.txt                
 root@kali:~# cat flag.txt 
 VolgaCTF{L0ve_a11_trust_@_few_d0_not_reinvent_the_wh33l}
-´´´
+```
 
 Much better.
