@@ -7,6 +7,10 @@
 ### Write-up
 
 We start off with a picture like this.
+
+
+
+
 ![Chill out](http://i.imgur.com/s4gzIhh.jpg)
 
 The first hint points us toward an algorithm called [Arnold's Cat Map](https://en.wikipedia.org/wiki/Arnold%27s_cat_map)
@@ -47,6 +51,6 @@ Each frame is saved as an individuall png.
 
 > $ python2.7 cat.py
 
-[25 Hour Fitness](blob:http://imgur.com/8c027d9f-cc7b-429c-9a8f-97258b4f11a0)
+![25 Hour Fitness](blob:http://imgur.com/8c027d9f-cc7b-429c-9a8f-97258b4f11a0)
 
 > $-->calif0rnia_g0vern0r<--$
