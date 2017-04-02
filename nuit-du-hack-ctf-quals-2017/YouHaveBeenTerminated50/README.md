@@ -35,7 +35,7 @@ from numpy import *
 
 # load image
 im = array(PIL.Image.open("o.jpg"))
-N = 56
+N = im.shape[0]
 
 # create x and y components of Arnold's cat mapping
 x,y = meshgrid(range(N),range(N))
