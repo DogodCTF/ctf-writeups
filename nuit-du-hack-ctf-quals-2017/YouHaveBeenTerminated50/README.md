@@ -51,6 +51,6 @@ Each frame is saved as an individuall png.
 
 > $ python2.7 cat.py
 
-![25 Hour Fitness](blob:http://imgur.com/8c027d9f-cc7b-429c-9a8f-97258b4f11a0)
+![25 Hour Fitness](i.imgur.com/v3wyAdQ.gif)
 
 > $-->calif0rnia_g0vern0r<--$
